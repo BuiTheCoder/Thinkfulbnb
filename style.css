@@ -137,6 +137,8 @@ footer p {
   .group {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
   .item {
     display: flex;
@@ -145,6 +147,8 @@ footer p {
   }
   .item-double {
     flex: 2;
+    justify-content: space-around;
+    align-items: center;
   }
 
   /* ------- Navigation ------- */

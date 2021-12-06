@@ -1,191 +1,211 @@
 /* -------  General Styles ------- */
 
-body {
-  font-family: "Lato", sans-serif;
+
+html, body {
+    font-family: "Lato", sans-serif;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: auto;
 }
 
 h2 {
-  font-size: 26px;
-  font-weight: 400;
-  margin: 0 10px 10px 10px;
-  text-align: center;
+    font-size: 26px;
+    font-weight: 400;
+    margin: 0 10px 10px 10px;
+    text-align: center;
 }
 
 h3 {
-  font-size: 18px;
-  font-weight: 500;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 p {
-  line-height: 1.5em;
-  margin: 0;
+    line-height: 1.5em;
+    margin: 0;
 }
 
 section {
-  padding: 20px;
+    padding: 20px;
 }
 
 section.alternate-background {
-  background-color: #00a699;
-  color: #fff;
+    background-color: #00a699;
+    color: #fff;
 }
 
 main img {
-  width: 100%;
+    width: 100%;
 }
 
 /* ---  Groups & Items --- */
 
 .group {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .item {
-  flex: 1;
-  margin: 10px;
+    flex: 1;
+    margin: 10px;
 }
 
 .item-double {
-  flex: 2;
+    flex: 2;
 }
 
 
 /* -------  Navigation ------- */
 
 header {
-  background-color: #ff385c;
-  padding: 20px 20px 0 20px;
-  text-align: center;
+    background-color: #ff385c;
+    padding: 20px 20px 0 20px;
+    text-align: center;
+
 }
 
 .logo {
-  font-family: "Pangolin", cursive;
-  font-size: 72px;
-  color: #fff;
+    font-family: "Pangolin", cursive;
+    font-size: 72px;
+    color: #fff;
 }
 
 header nav {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 header nav ul {
-  display: flex;
-  padding-left: 0;
+    display: flex;
+    padding-left: 0;
 }
 
 header nav ul li {
-  list-style-type: none;
+    list-style-type: none;
 }
 
 header nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  margin: 0 30px 0 0;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 30px 0 0;
 }
 
 header nav ul li:last-child a {
-  margin-right: 0;
+    margin-right: 0;
 }
 
 /* -------  Search Form ------- */
 form {
-  border: 2px solid #ff385c;
-  padding: 25px;
+    border: 2px solid #ff385c;
+    padding: 20px;
+    justify-content: space-between;
 }
 
 form div {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 
 form label {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 form select,
 form input {
-  margin-bottom: 20px;
-  width: 250px;
+    margin-bottom: 20px;
+    width: 150px;
 }
 
 form button {
-  background-color: #ff385c;
-  border: none;
-  color: #fff;
-  font-size: 24px;
-  padding: 15px;
-  width: 100%;
+    background-color: #ff385c;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    padding: 15px;
+    width: 100%;
 }
 
 /* -------  Footer ------- */
 
 footer {
-  background-color: #ff385c;
+    background-color: #ff385c;
 }
 
 footer p {
-  color: #fff;
-  text-align: center;
-  padding: 20px;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
 }
 
 /* -------  Media Query ------- */
 
+@media only screen and (max-width: 480px) {
+    .logo {
+        font-size: 36px;
+    }
+}
+
 @media all and (min-width: 480px) {
-  .group {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .item {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-  }
-  .item-double {
-    flex: 2;
-    justify-content: space-around;
-    align-items: center;
-  }
 
-  /* ------- Navigation ------- */
-  header {
-    display: flex;
-    justify-content: space-between;
-  }
+    .group {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-  header nav {
-    padding: 8px 0 10px 10px;
-  }
+    .item {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+    }
 
-  header nav ul li a:hover {
-    color: #bdbdbd;
-  }
+    .item-double {
+        flex: 2;
+        justify-content: space-around;
+        align-items: center;
+    }
 
-  /* ------ Form ------- */
-  div form {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 20px;
-  }
-  form div {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-  }
-  form select,
-  form input {
-    margin-bottom: 0;
-    width: 150px;
-  }
-  form button {
-    display: flex;
-    width: 100px;
-    font-size: 14px;
-    margin: 0;
-  }
+    /* ------- Navigation ------- */
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header nav {
+        padding: 8px 0 10px 10px;
+    }
+
+    header nav ul li a:hover {
+        color: #bdbdbd;
+    }
+
+    /* ------ Form ------- */
+    div form {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    form div {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    form select,
+    form input {
+        margin-bottom: 0;
+        width: 100px;
+    }
+
+    form button {
+        display: flex;
+        width: 100px;
+        font-size: 14px;
+        margin: 0;
+    }
 }
